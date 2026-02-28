@@ -1,4 +1,4 @@
 FROM alchemyplatform/rundler:latest
 
-# Define o comando padrão
-CMD ["node"]
+# Usa shell form para permitir expansão de variáveis
+CMD sh -c 'node "$@"'
